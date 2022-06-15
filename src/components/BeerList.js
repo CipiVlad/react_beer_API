@@ -1,12 +1,26 @@
-import { useState, useEffect } from 'react'
-import beerData from '../beerData'
-import BeerCard from './BeerCard'
+import { useState, useEffect } from 'react';
+import beerData from '../beerData';
+import BeerCard from './BeerCard';
 
 const BeerList = () => {
-
-    console.log(beerData)
+    const [beer, setBeer] = useState(beerData);
+    useEffect(() => {
+        setBeer(beerData);
+    }, [])
     return (
-        <div>BeerList</div>
+        <div className="BeerListCards">
+            {beer.map((elt) =>
+                <BeerCard
+                    key={elt._id}
+                    id={elt._id}
+                    image={elt.image_url}
+                    name={elt.name}
+                    tagline={elt.tagline}
+                    createdBy={elt.name}
+                    beer={beer}
+                />
+            )}
+        </div>
     )
 }
 

@@ -1,3 +1,14 @@
+/* BeerList */
+.BeerListCards img {
+  width: 10%;
+}
+
+
+/* LandingPage */
 img {
   width: 25%;
+}
+
+.returnArrow {
+  font-size: 3rem;
 }

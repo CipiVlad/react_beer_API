@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom"
+import beerLogo from "../BeerLogo.svg"
 const Navbar = () => {
     return (
-        <div className="returnArrow">
-            <Link to="/">⬅</Link>
+        <div className="Beer Logo">
+            <Link to="/">
+                <img src={beerLogo} alt="" />
+            </Link>
         </div>
     )
 }

@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react'
 import Navbar from "../components/Navbar"
+import backButton from "../backButton.svg"
+import { Link } from "react-router-dom";
 
 const RandomBeer = () => {
     const [beer, setBeer] = useState([]);
@@ -26,6 +28,7 @@ const RandomBeer = () => {
                     <div>
                         <p>{beer.description}</p>
                         <p>{beer.contributed_by}</p>
+                        <Link to="/allBeers">  <img src={backButton} alt="" /></Link>
                     </div>
                 </section>
                 <Navbar />

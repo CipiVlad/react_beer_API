@@ -1,5 +1,7 @@
 import Navbar from "../components/Navbar";
 import { useParams, useLocation } from "react-router-dom";
+import backButton from "../backButton.svg"
+import { Link } from "react-router-dom";
 
 const BeerDetailPage = () => {
     //id ziehen von BeerCard
@@ -36,6 +38,7 @@ const BeerDetailPage = () => {
                     <p>{detail[0].description}</p>
                     <p>{detail[0].contributed_by}</p>
                 </div>
+                <Link to="/allBeers">  <img src={backButton} alt="" /></Link>
             </section>
             <Navbar />
         </div>

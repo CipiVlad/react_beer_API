@@ -21,12 +21,11 @@ const RandomBeer = () => {
                         <h3>{beer.name}</h3>
                         <h4>{beer.tagline}</h4>
                         <div>
-                            <p>Frist brewed: {beer.first_brewed}</p>
+                            <p>First brewed: {beer.first_brewed}</p>
                             <p>Attenuation Level: {beer.attenuation_level}</p>
                         </div>
                         <div>
                             <p>{beer.description}</p>
-                            {/* <p>{beer.contributed_by}</p> */}
                             <Link to="/allBeers">  <img src={backButton} alt="" /></Link>
                         </div>
                     </div>

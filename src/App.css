@@ -13,6 +13,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto Slab', serif;
+  scroll-behavior: smooth;
 }
 
 
@@ -28,9 +29,29 @@ font-family: 'Roboto Slab', serif;
 
 
 /* -----------Landing Page------------ */
+header {
+  background: radial-gradient(#422505d7, #1c0f02d7);
+  background-size: cover;
+  height: 100vh;
+}
+
+header nav ul {
+  display: flex;
+}
+
+.beers_img {
+  border-radius: 40px;
+  margin-top: 20%;
+  box-shadow: inset 0 0 1em gold, 0 0 1em rgb(16, 1, 1);
+}
+
 header nav ul li {
   list-style: none;
   margin: 4vh 0;
+}
+
+.beers_li p {
+  color: #fff;
 }
 
 .beers_link {
@@ -39,11 +60,24 @@ header nav ul li {
   background: #FFCA41;
   font-size: 30px;
   font-weight: 700;
+  border-radius: 10px;
+  padding: 1%;
+  transition: 0.5s;
+}
+
+.beers_link:hover {
+  color: #422505d7;
+  width: 90%;
+  background: #fab810;
+  font-size: 30px;
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 1%;
 }
 
 .beers_li a {
   text-decoration: none;
-
+  text-align: center;
 }
 
 .beers_img {
@@ -51,16 +85,23 @@ header nav ul li {
   display: block;
 }
 
+.AllBeersContainer,
+.wrapperDetailCard {
+  background: radial-gradient(#76590e, #333333);
+}
+
+
 /* -----------Navbar---------------- */
 .BeerLogo {
   background: #FFCA41;
   text-align: center;
+  padding: 20px;
 }
 
 
 /*---------------- BeerListCards---------- */
 .BeerListCards {
-  margin: 20%;
+  margin: 0 20%;
 
 }
 
@@ -85,13 +126,13 @@ header nav ul li {
 }
 
 .BeerCardContainer article {
-  margin-bottom: 10%;
+  margin: 20%;
 }
 
 .BeerCardContainer article h2 {
   font-size: 30px;
   font-weight: 500;
-  color: #333333;
+  color: #f8e9e9;
 }
 
 .BeerCardContainer article h3 {
@@ -103,7 +144,7 @@ header nav ul li {
 .BeerCardContainer p {
   font-size: 15px;
   font-weight: 500;
-  color: #333333;
+  color: lightpink;
   margin-bottom: 20%;
 }
 
@@ -116,6 +157,26 @@ header nav ul li {
   margin-top: 23%;
 }
 
+.BeerDetailCard {
+  display: flex;
+  /* gap: 20%; */
+}
+
+.BeerDetailCard img {
+  width: 10%;
+  margin-right: 10%;
+  padding: 10%;
+}
+
+.DetailContainer {
+  padding-top: 10%;
+}
+
+/* 
+================================================================
+          MEDIA QUERIES
+================================================================
+*/
 
 @media(max-width:500px) {
   .BeerListCards {

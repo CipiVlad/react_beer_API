@@ -8,7 +8,6 @@ import beerData from './beerData';
 
 
 function App() {
-  // console.log(beerData[0]._id);
   return (
     <div className="App">
       <Routes>

@@ -32,12 +32,11 @@ const BeerDetailPage = () => {
                         <h3>{detail[0].name}</h3>
                         <h4>{detail[0].tagline}</h4>
                         <div>
-                            <p>Frist brewed: {detail[0].first_brewed}</p>
+                            <p>First brewed: {detail[0].first_brewed}</p>
                             <p>Attenuation Level: {detail[0].attenuation_level}</p>
                         </div>
                         <div>
                             <p>{detail[0].description}</p>
-                            {/* <p>{detail[0].contributed_by}</p> */}
                         </div>
                         <Link to="/allBeers">  <img src={backButton} alt="" /></Link>
                     </div>

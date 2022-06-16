@@ -29,7 +29,7 @@ font-family: 'Roboto Slab', serif;
 
 
 /* -----------Landing Page------------ */
-header {
+/* header {
   background: radial-gradient(#422505d7, #1c0f02d7);
   background-size: cover;
   height: 100vh;
@@ -73,6 +73,7 @@ header nav ul li {
   font-weight: 700;
   border-radius: 10px;
   padding: 1%;
+  transition: ease-in-out;
 }
 
 .beers_li a {
@@ -88,7 +89,7 @@ header nav ul li {
 .AllBeersContainer,
 .wrapperDetailCard {
   background: radial-gradient(#76590e, #333333);
-}
+} */
 
 
 /* -----------Navbar---------------- */
@@ -100,13 +101,13 @@ header nav ul li {
 
 
 /*---------------- BeerListCards---------- */
-.BeerListCards {
+/* .BeerListCards {
   margin: 0 20%;
 
-}
+} */
 
 /* ------BeerCard */
-
+/* 
 .BeerCard {
   padding: 10%;
 }
@@ -114,9 +115,8 @@ header nav ul li {
 .BeerCardContainer {
   display: flex;
   justify-content: space-between;
-  /* width: 400px; */
   gap: 5%;
-  /* padding: 5vh 1vw; */
+
   border-bottom: 2px solid #33333380;
 }
 
@@ -159,7 +159,6 @@ header nav ul li {
 
 .BeerDetailCard {
   display: flex;
-  /* gap: 20%; */
 }
 
 .BeerDetailCard img {
@@ -170,7 +169,7 @@ header nav ul li {
 
 .DetailContainer {
   padding-top: 10%;
-}
+} */
 
 /* 
 ================================================================
@@ -235,6 +234,8 @@ header nav ul li {
 
   .BeerCard {
     width: 100%;
+    margin-left: 5%;
+
   }
 
   .BeerCardContainer {

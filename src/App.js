@@ -4,7 +4,6 @@ import LandingPage from './pages/LandingPage';
 import AllBeersPage from './pages/AllBeersPage';
 import RandomBeer from './pages/RandomBeer';
 import BeerDetailPage from './pages/BeerDetailPage';
-import beerData from './beerData';
 
 
 function App() {

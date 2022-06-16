@@ -23,22 +23,25 @@ const BeerDetailPage = () => {
 
     //Ausgabe im display
     return (
-        <div>
-            <section>
-                <article>
-                    <img src={detail[0].image_url} alt="" />
-                    <h3>{detail[0].name}</h3>
-                    <p>{detail[0].tagline}</p>
-                </article>
-                <div>
-                    <p>{detail[0].first_brewed}</p>
-                    <p>{detail[0].attenuation_level}</p>
+        <div className="wrapperDetailCard">
+            <section className="BeerDetailCard">
+
+                <img src={detail[0].image_url} alt="" />
+                <div className="DetailContainer">
+                    <div>
+                        <h3>{detail[0].name}</h3>
+                        <h4>{detail[0].tagline}</h4>
+                        <div>
+                            <p>Frist brewed: {detail[0].first_brewed}</p>
+                            <p>Attenuation Level: {detail[0].attenuation_level}</p>
+                        </div>
+                        <div>
+                            <p>{detail[0].description}</p>
+                            {/* <p>{detail[0].contributed_by}</p> */}
+                        </div>
+                        <Link to="/allBeers">  <img src={backButton} alt="" /></Link>
+                    </div>
                 </div>
-                <div>
-                    <p>{detail[0].description}</p>
-                    <p>{detail[0].contributed_by}</p>
-                </div>
-                <Link to="/allBeers">  <img src={backButton} alt="" /></Link>
             </section>
             <Navbar />
         </div>

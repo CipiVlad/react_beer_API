@@ -13,22 +13,22 @@ const RandomBeer = () => {
     console.log(beer);
     return (
         <div>
-            <h1>Random Beer</h1>
             <div>
-                <section>
-                    <article>
-                        <img src={beer.image_url} alt="" />
+                <section className="BeerDetailCard">
+
+                    <img src={beer.image_url} alt="" />
+                    <div className="DetailContainer">
                         <h3>{beer.name}</h3>
-                        {/* <p>{detail[0].tagline}</p> */}
-                    </article>
-                    <div>
-                        <p>{beer.first_brewed}</p>
-                        <p>{beer.attenuation_level}</p>
-                    </div>
-                    <div>
-                        <p>{beer.description}</p>
-                        <p>{beer.contributed_by}</p>
-                        <Link to="/allBeers">  <img src={backButton} alt="" /></Link>
+                        <h4>{beer.tagline}</h4>
+                        <div>
+                            <p>Frist brewed: {beer.first_brewed}</p>
+                            <p>Attenuation Level: {beer.attenuation_level}</p>
+                        </div>
+                        <div>
+                            <p>{beer.description}</p>
+                            {/* <p>{beer.contributed_by}</p> */}
+                            <Link to="/allBeers">  <img src={backButton} alt="" /></Link>
+                        </div>
                     </div>
                 </section>
                 <Navbar />

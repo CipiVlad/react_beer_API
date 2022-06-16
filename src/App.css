@@ -1,21 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* ---------generals------------- */
+
+/* no horizontal scrolling */
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Slab', serif;
+}
+
+
 /* colors
 background:#FFCA41;
 background:#E5E5E5;
 background:#33333380;
 */
 
+/* fonts
+font-family: 'Roboto Slab', serif;
+*/
 
 
-/* BeerList */
-.BeerListCards img {
-  width: 10%;
+/* -----------Landing Page------------ */
+header nav ul li {
+  list-style: none;
+  margin: 4vh 0;
 }
 
-/* LandingPage */
-img {
+.beers_link {
+  color: #fff;
+  width: 90%;
+  background: #FFCA41;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.beers_li a {
+  text-decoration: none;
+
+}
+
+.beers_img {
+  width: 90%;
+  display: block;
+}
+
+/* -----------Navbar---------------- */
+.BeerLogo {
+  background: #FFCA41;
+  text-align: center;
+}
+
+
+/*---------------- BeerListCards---------- */
+.BeerListCards {
+  margin: 20%;
+
+}
+
+/* ------BeerCard */
+
+.BeerCard {
+  padding: 10%;
+}
+
+.BeerCardContainer {
+  display: flex;
+  justify-content: space-between;
+  /* width: 400px; */
+  gap: 5%;
+  /* padding: 5vh 1vw; */
+  border-bottom: 2px solid #33333380;
+}
+
+.BeerCardContainer img {
   width: 25%;
+  margin: 20px;
 }
 
-.returnArrow {
-  font-size: 3rem;
+.BeerCardContainer article {
+  margin-bottom: 10%;
+}
+
+.BeerCardContainer article h2 {
+  font-size: 30px;
+  font-weight: 500;
+  color: #333333;
+}
+
+.BeerCardContainer article h3 {
+  font-size: 18px;
+  font-weight: 900;
+  color: #FFCA41
+}
+
+.BeerCardContainer p {
+  font-size: 15px;
+  font-weight: 500;
+  color: #333333;
+  margin-bottom: 20%;
+}
+
+.BeerCardContainer a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #FFCA41;
+  padding: 15px 30px;
+  border-radius: 40px;
+  margin-top: 23%;
+}
+
+
+@media(max-width:500px) {
+  .BeerListCards {
+    margin: 0%;
+    /* padding: 14%; */
+    width: 88%;
+  }
+
+  body {
+    background: #f8e9e9;
+  }
+
+  /* -----------Landing Page------------ */
+
+
+  header nav ul li {
+    list-style: none;
+    margin: 4vh 0;
+  }
+
+  header nav ul {
+    margin-top: 10px;
+  }
+
+  .beers_link {
+    color: #fff;
+    width: 83%;
+    background: #FFCA41;
+    font-size: 30px;
+    font-weight: 700;
+    border-radius: 4px;
+    padding: 10px;
+  }
+
+  .beers_li a {
+    text-decoration: none;
+  }
+
+  .beers_img {
+    width: 90%;
+    display: block;
+    border-radius: 10px;
+    box-shadow: inset 0 0 1em gold, 0 0 1em rgb(16, 1, 1);
+  }
+
+  /* -----------Navbar---------------- */
+  .BeerLogo {
+    background: #FFCA41;
+    text-align: center;
+  }
+
+
+  /*---------------- BeerListCards---------- */
+
+  /* ------BeerCard */
+
+  .BeerCard {
+    width: 100%;
+  }
+
+  .BeerCardContainer {
+    display: flex;
+    justify-content: space-between;
+    /* width: 400px; */
+    gap: 5%;
+    padding: 5vh 1vw;
+    border-bottom: 2px solid #33333380;
+  }
+
+  .BeerCardContainer img {
+    width: 25%;
+    margin: 20px;
+  }
+
+  .BeerCardContainer article {
+    margin-bottom: 10%;
+  }
+
+  .BeerCardContainer article h2 {
+    font-size: 30px;
+    font-weight: 500;
+    color: #333333;
+  }
+
+  .BeerCardContainer article h3 {
+    font-size: 18px;
+    font-weight: 900;
+    color: #FFCA41
+  }
+
+  .BeerCardContainer p {
+    font-size: 15px;
+    font-weight: 500;
+    color: #333333;
+    margin-bottom: 20%;
+  }
+
+  .BeerCardContainer a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #FFCA41;
+    padding: 15px 30px;
+    border-radius: 40px;
+    margin-top: 23%;
+  }
+
+
+  .wrapperDetailCard {}
+
+
+  .BeerDetailCard {
+    padding: 10%;
+  }
+
+  .BeerDetailCard img {
+    width: 50%;
+    margin-left: 20%;
+  }
+
+  .DetailContainer img {
+    width: 20%;
+    margin-bottom: 16%;
+  }
+
+  .DetailContainer div h3 {
+    font-size: 52px;
+    font-weight: 500;
+  }
+
+  .DetailContainer div h4 {
+    font-size: 18px;
+    font-weight: 900;
+    color: #FFCA41
+  }
+
+  .DetailContainer div p {
+    font-size: 15px;
+    font-weight: 500;
+    color: #333333;
+  }
+
+
+
+
 }

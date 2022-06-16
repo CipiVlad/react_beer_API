@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,SAAS,CAAC;EACN,UAAU,EAAE,OAAO;EACnB,UAAU,EAAE,MAAM;CACrB;;AAED,AAAA,SAAS,CAAC,GAAG,CAAC;EACV,OAAO,EAAE,KAAK;CACjB",
+    "sources": [
+        "NavbarStyle.scss"
+    ],
+    "names": [],
+    "file": "NavbarStyle.css"
+}
